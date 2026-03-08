@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Banana Clicker</title>
+
+<style>
+
+body{
+ margin:0;
+ font-family:Arial;
+ background:#fff8c6;
+ display:flex;
+ height:100vh;
+}
+
+/* LOADING SCREEN */
+
+#loadingScreen{
+ position:fixed;
+ top:0;
+ left:0;
+ width:100%;
+ height:100%;
+ background:#fff8c6;
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
+ align-items:center;
+ z-index:1000;
+}
+
+#loadingBarBox{
+ width:300px;
+ height:30px;
+ border:2px solid black;
+ margin-top:20px;
+}
+
+#loadingBar{
+ width:0%;
+ height:100%;
+ background:gold;
+}
+
+/* PLAY SCREEN */
+
+#startScreen{
+ position:fixed;
+ top:0;
+ left:0;
+ width:100%;
+ height:100%;
+ background:#fff8c6;
+ display:none;
+ flex-direction:column;
+ justify-content:center;
+ align-items:center;
+ z-index:999;
+}
+
+#startScreen h1{
+ font-size:60px;
+ margin-bottom:40px;
+}
+
+#startScreen button{
+ font-size:30px;
+ padding:20px 60px;
+ cursor:pointer;
+ border:none;
+ border-radius:10px;
+ background:gold;
+}
+
+/* GAME LAYOUT */
+
+#left{
+ width:40%;
+ padding:30px;
+ text-align:center;
+ border-right:3px solid #ddd;
+}
+
+#banana{
+ font-size:120px;
+ cursor:pointer;
+ transition:0.1s;
+}
+
+#banana:active{
+ transform:scale(0.9);
+}
